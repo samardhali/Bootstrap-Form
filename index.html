@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bootstrap Forms</title>
+</head>
+
+<body>
+
+    <div class="banner mb-5">
+        <img src="images/banner.jpg" alt="Banner" class="img-fluid" />
+        <div class="desc">
+            <h1>Bootstrap Forms</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="" method="post">
+            <!-- First Name -->
+            <div class="mb-3">
+                <label for="exampleInputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="emailHelp" placeholder="First Name" autocomplete="off" required="true" />
+            </div>
+            <!-- Last Name -->
+            <div class="mb-3">
+                <label for="exampleInputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="emailHelp" placeholder="Last Name" autocomplete="off" required="true" />
+            </div>
+            <!-- Email Name -->
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" autocomplete="off" required="true" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!-- Password Name -->
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="new-password" required="true" />
+            </div>
+            <!-- Date -->
+            <div class="mb-3">
+                <label for="exampleInputDate" class="form-label">Date</label>
+                <input type="text" class="form-control" id="exampleInputDate" placeholder="Date" autocomplete="off" required="true" onfocus="(this.type='date')" onblur="(this.type='text')" />
+            </div>
+            <!-- Time -->
+            <div class="mb-3">
+                <label for="exampleInputTime" class="form-label">Time</label>
+                <input type="text" class="form-control" id="exampleInputTime" placeholder="Time" autocomplete="off" required="true" onfocus="(this.type='time')" onblur="(this.type='text')" />
+            </div>
+
+            <!-- Select -->
+            <div class="mb-3">
+                <label for="exampleInputSelect" class="form-label">Select</label>
+                <select class="form-select" aria-label="Default select example" id="exampleInputSelect">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <!-- Checkbox -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                </label>
+            </div>
+            <!-- Checkbox Checked -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                </label>
+            </div>
+            <!-- Radio Button -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                </label>
+            </div>
+            <!-- Radio Button Checked -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                </label>
+            </div>
+            <!-- File Upload -->
+            <div class="mb-3">
+                <label for="formFile" class="form-label">File Upload</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <!-- Color Input -->
+            <div class="mb-3">
+                <label for="exampleColorInput" class="form-label">Color picker</label>
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+            </div>
+            <!-- Datalist -->
+            <div class="mb-3">
+                <label for="exampleDataList" class="form-label">Datalist example</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                </datalist>
+            </div>
+            <!-- Min Max Range -->
+            <div class="mb-3">
+                <label for="customRange2" class="form-label">Min Max range</label>
+                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+            </div>
+            <!-- Steps ange -->
+            <div class="mb-3">
+                <label for="customRange3" class="form-label">Example range</label>
+                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+            </div>
+            <!-- Testarea -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <!-- Button Group -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+
+        </form>
+    </div> <!-- .container -->
+
+
+    <!-- Bootstrap Popper Js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <!-- Bootstrap Min Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
